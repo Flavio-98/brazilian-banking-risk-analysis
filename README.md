@@ -29,6 +29,23 @@ A base foi utilizada para construção de indicadores de risco e desempenho, per
 
 ---
 
+## 🧠 Metodologia
+
+### 1. Engenharia de Atributos (KPIs)
+Para comparar bancos de tamanhos diferentes (ex: Banco do Brasil vs. Banco Regional), criamos índices relativos:
+
+| Indicador | Fórmula | Interpretação |
+| :--- | :--- | :--- |
+| **Alavancagem** | `Ativo / Patrimônio` | **Risco:** Quanto o banco opera acima do seu capital. |
+| **Foco em Crédito** | `Carteira / Ativo` | **Perfil:** Define se é Varejo (alta) ou Investimento (baixa). |
+| **ROE** | `Lucro / Patrimônio` | **Performance:** Eficiência e retorno da operação. |
+
+### 2. Algoritmos Utilizados
+* **K-Means:** Para agrupar bancos por semelhança comercial.
+* **DBSCAN:** Para isolar anomalias estatísticas (bancos com alavancagem >100x ou prejuízos consistentes).
+   
+---
+
 ## 📊 Gráficos
 
 ### Segmentação de Perfil (K-Means)
@@ -48,24 +65,9 @@ O algoritmo isolou instituições que divergem estatisticamente, apontando poss�
 
 ---
 
-## 🧠 Metodologia
-
-### 1. Engenharia de Atributos (KPIs)
-Para comparar bancos de tamanhos diferentes (ex: Banco do Brasil vs. Banco Regional), criamos índices relativos:
-
-| Indicador | Fórmula | Interpretação |
-| :--- | :--- | :--- |
-| **Alavancagem** | `Ativo / Patrimônio` | **Risco:** Quanto o banco opera acima do seu capital. |
-| **Foco em Crédito** | `Carteira / Ativo` | **Perfil:** Define se é Varejo (alta) ou Investimento (baixa). |
-| **ROE** | `Lucro / Patrimônio` | **Performance:** Eficiência e retorno da operação. |
-
-### 2. Algoritmos Utilizados
-* **K-Means:** Para agrupar bancos por semelhança comercial.
-* **DBSCAN:** Para isolar anomalias estatísticas (bancos com alavancagem >100x ou prejuízos consistentes).
-   
----
-
 ## 📈 Conclusões
-O projeto demonstrou que técnicas de Machine Learning não supervisionado podem ser utilizadas para identificar perfis operacionais distintos e detectar instituições com indicadores financeiros fora do padrão do mercado.
+A análise demonstrou que o sistema bancário brasileiro apresenta perfis operacionais distintos e níveis heterogêneos de risco, não podendo ser avaliado apenas pelo porte das instituições.
 
-A abordagem permite apoiar análises de risco, segmentação de mercado e monitoramento de instituições financeiras utilizando dados públicos.
+Os algoritmos K-Means e DBSCAN foram capazes de segmentar bancos por características de negócio e identificar instituições com indicadores financeiros fora do padrão do mercado.
+
+A abordagem pode apoiar análises de risco, segmentação de mercado e monitoramento de instituições financeiras utilizando dados públicos.
