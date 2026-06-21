@@ -66,4 +66,6 @@ Para comparar bancos de tamanhos diferentes (ex: Banco do Brasil vs. Banco Regio
 ---
 
 ## 📈 Conclusões
-A análise revelou que o sistema bancário brasileiro é heterogêneo. Enquanto o **K-Means** segmentou o mercado, o **DBSCAN** realizou uma auditoria, isolando automaticamente **~100 instituições** com indicadores de risco extremos que fogem ao padrão de mercado.
+O projeto demonstrou que técnicas de Machine Learning não supervisionado podem ser utilizadas para identificar perfis operacionais distintos e detectar instituições com indicadores financeiros fora do padrão do mercado.
+
+A abordagem permite apoiar análises de risco, segmentação de mercado e monitoramento de instituições financeiras utilizando dados públicos.
