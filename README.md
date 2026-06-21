@@ -9,6 +9,25 @@ Identificar padrões ocultos nos balanços bancários para:
 2.  **Detectar Anomalias:** Isolar automaticamente instituições com indicadores de risco fora do comum (Outliers).
 
 ---
+📂 Dados Utilizados
+
+Dados públicos de instituições financeiras brasileiras contendo indicadores patrimoniais, carteira de crédito, ativos totais e resultados financeiros.
+
+A base foi utilizada para construção de indicadores de risco e desempenho, permitindo a comparação entre instituições de diferentes portes.
+
+---
+💻 Tecnologias
+
+• Python
+• Pandas
+• NumPy
+• Scikit-learn
+• Matplotlib
+• Seaborn
+• K-Means
+• DBSCAN
+
+---
 
 ## 📊 Gráficos
 
